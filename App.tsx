@@ -1,5 +1,5 @@
 import React from 'react';
-import { LongReport } from './components/LongReport';
+import { LongReport } from './components/LongReport.tsx';
 import { ThemeId } from './types';
 
 export default function App() {
