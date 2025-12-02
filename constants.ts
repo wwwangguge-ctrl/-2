@@ -7,7 +7,7 @@ export const THEMES: Record<string, ThemeConfig> = {
     bgClass: 'bg-slate-950 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-900 via-slate-950 to-black',
     textPrimary: 'text-white',
     textSecondary: 'text-slate-400',
-    cardBg: 'bg-white/5 backdrop-blur-2xl',
+    cardBg: 'bg-white/5 backdrop-blur-xl',
     cardBorder: 'border-white/10',
     accentGradient: 'from-blue-400 to-emerald-400',
     accentText: 'text-blue-400',
@@ -21,7 +21,7 @@ export const THEMES: Record<string, ThemeConfig> = {
     bgClass: 'bg-slate-50',
     textPrimary: 'text-slate-800',
     textSecondary: 'text-slate-500',
-    cardBg: 'bg-white/60 backdrop-blur-xl', // Increased blur, transparency for glass
+    cardBg: 'bg-white/80 backdrop-blur-lg', 
     cardBorder: 'border-white/60',
     accentGradient: 'from-slate-600 to-slate-400',
     accentText: 'text-slate-700',
@@ -37,7 +37,7 @@ export const THEMES: Record<string, ThemeConfig> = {
     textPrimary: 'text-white',
     textSecondary: 'text-neutral-400',
     // Dark glass with yellow tint
-    cardBg: 'bg-neutral-900/60 backdrop-blur-2xl',
+    cardBg: 'bg-neutral-900/80 backdrop-blur-xl',
     cardBorder: 'border-[#ffdd00]/30',
     accentGradient: 'from-[#ffdd00] to-[#ffaa00]',
     accentText: 'text-[#ffdd00]',
@@ -49,12 +49,12 @@ export const THEMES: Record<string, ThemeConfig> = {
     id: 'liquid-blue',
     name: 'Liquid Aqua',
     // Fresh white/blue gradient
-    bgClass: 'bg-blue-50 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-100 via-white to-blue-50',
+    bgClass: 'bg-blue-50/80 bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-blue-100/50 via-white to-blue-50/50',
     textPrimary: 'text-slate-800',
     textSecondary: 'text-blue-900/60',
-    // High gloss, liquid glass effect
-    cardBg: 'bg-white/40 backdrop-blur-3xl shadow-[inset_0_0_20px_rgba(255,255,255,0.5)]',
-    cardBorder: 'border-white/80',
+    // OPTIMIZED: Increased opacity to reduce blur calculation needs, removed heavy inset shadow, reduced blur radius
+    cardBg: 'bg-white/70 backdrop-blur-xl shadow-lg shadow-blue-500/5',
+    cardBorder: 'border-white/60',
     accentGradient: 'from-blue-500 to-cyan-400',
     accentText: 'text-blue-600',
     iconColor: 'text-blue-500',
